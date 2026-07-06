@@ -1,0 +1,41 @@
+<button
+  id="theme-toggle"
+  type="button"
+  aria-label="Toggle dark mode"
+  class="p-2 rounded-full text-ink-2 hover:text-ink hover:bg-surface transition-colors cursor-pointer"
+>
+  <svg
+    class="size-5 dark:hidden"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.8"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M21.75 14.4A9 9 0 1 1 9.6 2.25 7 7 0 0 0 21.75 14.4Z"></path>
+  </svg>
+  <svg
+    class="size-5 hidden dark:block"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.8"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <circle cx="12" cy="12" r="4"></circle>
+    <path
+      stroke-linecap="round"
+      d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4"
+    ></path>
+  </svg>
+</button>
+
+<script>
+  document.getElementById("theme-toggle")?.addEventListener("click", () => {
+    const isDark = document.documentElement.classList.toggle("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+</script>

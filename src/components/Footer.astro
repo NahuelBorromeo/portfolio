@@ -1,0 +1,33 @@
+---
+const year = new Date().getFullYear();
+
+const links = [
+  { href: "mailto:nahuelborromeo@gmail.com", label: "Email" },
+  { href: "https://www.linkedin.com/in/nahuel-borromeo/", label: "LinkedIn" },
+  { href: "https://github.com/NahuelBorromeo", label: "GitHub" },
+];
+---
+
+<footer class="border-t border-line">
+  <div
+    class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 py-10 sm:flex-row"
+  >
+    <p class="text-sm text-ink-2">
+      © {year} Nahuel Borromeo · Lima, Perú
+    </p>
+    <div class="flex items-center gap-5">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            target={link.href.startsWith("http") ? "_blank" : undefined}
+            rel={link.href.startsWith("http") ? "noopener" : undefined}
+            class="text-sm text-ink-2 hover:text-accent transition-colors"
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</footer>

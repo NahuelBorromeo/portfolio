@@ -1,0 +1,40 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+
+// Adding a section/tab: add an entry here (docs/user/writing-content.md)
+const links = [
+  { href: "/#experience", label: "Experience" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#about", label: "About" },
+  { href: "/blog", label: "Blog" },
+];
+---
+
+<header
+  class="sticky top-0 z-50 border-b border-line bg-bg/70 backdrop-blur-xl"
+>
+  <nav
+    class="mx-auto flex max-w-5xl items-center justify-between px-6 h-14"
+    aria-label="Main"
+  >
+    <a
+      href="/"
+      class="font-semibold tracking-tight text-ink hover:text-accent transition-colors"
+    >
+      Nahuel Borromeo
+    </a>
+    <div class="flex items-center gap-1 sm:gap-2">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="px-2.5 py-1.5 text-sm text-ink-2 hover:text-ink rounded-lg hover:bg-surface transition-colors"
+          >
+            {link.label}
+          </a>
+        ))
+      }
+      <ThemeToggle />
+    </div>
+  </nav>
+</header>
