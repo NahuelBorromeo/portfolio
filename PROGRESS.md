@@ -42,6 +42,8 @@ read this file first, pick up at the first unchecked step.
 
 ## Notes
 
-- Waiting on Nahuel: LinkedIn photo file, updated CV PDF, domain purchase,
-  Vercel account, optional real metrics for experience bullets.
+- Real photo integrated (src/assets/portrait.jpg) ✓
+- Still waiting on Nahuel: updated CV PDF (public/cv.pdf holds the outdated
+  one), GitHub repo, Vercel account, domain purchase, optional real metrics
+  for experience bullets.
 - (add blockers, decisions, and things to revisit here)
