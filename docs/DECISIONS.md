@@ -80,6 +80,16 @@ The PDF CV is outdated on two points: SwiftUI is now a working professional
 skill, and Phase 2 of the NTT Data investments module has shipped.
 `docs/knowledge/content.md` is the copy source of truth, not the PDF.
 
+## 17b. Copywriting pass (2026-07-06): scale over sector
+Repositioned all copy: "4+ years" (not 3+), identity = shipping reliable
+production apps at scale; fintech/banking appears only as evidence inside
+experience entries, never in the hero or about identity. Metrics policy: only
+claims Nahuel can defend in a behavioral interview — "double-digit percentage
+growth" in investment-product openings (directionally confirmed by him), and
+"millions of users" only for MODO (publicly documented). No invented precise
+numbers, despite being offered the option — fabricated stats collapse under
+US-style interview probing.
+
 ## 17. Theme behavior
 Follow `prefers-color-scheme` by default; manual toggle overrides and persists
 in `localStorage`; inline head script prevents flash of wrong theme.

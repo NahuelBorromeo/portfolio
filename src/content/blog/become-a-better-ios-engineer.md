@@ -7,7 +7,7 @@ order: 1
 tags: ["ios", "learning"]
 ---
 
-After 3+ years building banking apps with Swift, UIKit and SwiftUI, I know
+After 4+ years shipping production apps with Swift, UIKit and SwiftUI, I know
 something every experienced engineer eventually admits: shipping features every
 day doesn't automatically make you better at the fundamentals.
 

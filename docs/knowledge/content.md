@@ -20,10 +20,14 @@ PDF CV disagree, **this file wins** (the CV is slightly outdated).
 
 Headline: **Nahuel Borromeo** / **iOS Engineer**
 
-One-liner (draft, refine at implementation):
+One-liner (2026-07 copywriting pass — scale/reliability as identity, fintech
+as evidence only, per Nahuel: don't pigeonhole as banking-only):
 
-> I build production banking apps with Swift, UIKit and SwiftUI — 3+ years
-> turning complex financial products into simple mobile experiences.
+> I ship production iOS apps that millions of people rely on — 4+ years
+> crafting reliable, well-architected experiences in Swift, UIKit and SwiftUI.
+
+Experience is **4+ years** everywhere (counting from Yobel, Aug 2021). Never
+"3+" (that was the outdated CV).
 
 CTAs: Email · LinkedIn · GitHub · Download CV
 
@@ -35,8 +39,12 @@ CTAs: Email · LinkedIn · GitHub · Download CV
 Context: investments module of a large-scale banking app (client under NDA —
 refer to it only as "a large-scale banking application").
 
-- Developed and shipped investment features across **Phase 1 and Phase 2** of
-  the module — both live in production. ← (Phase 2 is the CV update)
+- Shipped **Phase 1 and Phase 2** of the investments module end to end — both
+  live in production. ← (Phase 2 is the CV update)
+- Helped drive **double-digit percentage growth** in customers opening
+  investment products — a new revenue line for the bank. ← Directional metric
+  confirmed by Nahuel (2026-07); do NOT invent a precise number. Swap in the
+  exact % if he gets a shareable figure.
 - Works with Swift, **UIKit and SwiftUI**, Clean Architecture and MVVM, with
   strict Domain/Data/Presentation separation for maintainability and testability.
 - Collaborates with backend and QA teams in an agile environment.
@@ -46,8 +54,9 @@ refer to it only as "a large-scale banking application").
 
 Context: MODO, the digital wallet for BBVA Argentina (can be named publicly).
 
-- Implemented and launched **TransferPull**, a money-transfer feature used by a
-  large user base.
+- Implemented and launched **TransferPull**, a money-transfer feature serving
+  MODO's millions of users. (MODO's multi-million user base is public info —
+  safe claim.)
 - Built two amortization systems for business lending products.
 - Maintained and extended legacy systems under high-pressure delivery cycles,
   ensuring stability and backward compatibility.
@@ -77,9 +86,10 @@ Do not list spoken-language levels on the site.
 
 ## About (draft, 2-3 sentences, human tone)
 
-> I'm a systems engineer from Lima who found his craft in iOS. Most of my work
-> has been in banking — the kind of apps where a bug costs real money — which
-> taught me to care about architecture, testing and the details users never see.
+> I'm a systems engineer from Lima who found his craft in iOS. I've spent my
+> career on high-stakes products — apps where a bug costs real money — and that
+> shaped how I work: architecture first, tests always, and care for the details
+> users never see. That discipline travels to any product, in any industry.
 > Right now I'm deepening my iOS fundamentals in public through my
 > [Become a better iOS engineer](/blog) series.
 
