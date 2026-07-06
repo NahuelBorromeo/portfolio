@@ -32,10 +32,13 @@ read this file first, pick up at the first unchecked step.
 
 ## Session 4 — Ship
 
-- [ ] 9. SEO: meta/OG/canonical, static OG image, RSS, sitemap, robots.txt, 404
-- [ ] 10. Assets & polish: optimized photo, cv.pdf, favicons, a11y pass,
-      Lighthouse ≥95
-- [ ] 11. Deploy: GitHub → Vercel, nahuelborromeo.dev DNS, production smoke test
+- [x] 9. SEO: meta/OG/canonical, static OG image, RSS, sitemap, robots.txt, 404
+- [x] 10. Assets & polish: favicon, mobile nav fix, a11y basics (landmarks,
+      focus rings, reduced-motion, alt text) — *pending: real photo, updated
+      cv.pdf, Lighthouse run against production after deploy*
+- [ ] 11. Deploy: GitHub → Vercel, nahuelborromeo.dev DNS, production smoke
+      test — **blocked on Nahuel:** GitHub repo access, Vercel account, domain
+      purchase
 
 ## Notes
 
