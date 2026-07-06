@@ -1,0 +1,86 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { formatDate, getPublishedPosts, sortSeries } from "../../lib/blog";
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts();
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+// Prev/next within the same series, in reading order.
+let prev, next;
+if (post.data.series) {
+  const posts = await getPublishedPosts();
+  const series = sortSeries(
+    posts.filter((p) => p.data.series === post.data.series),
+  );
+  const index = series.findIndex((p) => p.id === post.id);
+  prev = series[index - 1];
+  next = series[index + 1];
+}
+---
+
+<BaseLayout
+  title={`${post.data.title} — Nahuel Borromeo`}
+  description={post.data.description}
+>
+  <article class="mx-auto max-w-3xl px-6 py-16">
+    {
+      post.data.series && (
+        <p class="text-sm font-medium text-accent">
+          Series · {post.data.series}
+        </p>
+      )
+    }
+    <h1 class="mt-2 text-4xl font-semibold tracking-tight text-balance">
+      {post.data.title}
+    </h1>
+    <time
+      datetime={post.data.pubDate.toISOString()}
+      class="mt-4 block text-sm text-ink-2"
+    >
+      {formatDate(post.data.pubDate)}
+    </time>
+
+    <div
+      class="prose prose-lg mt-10 max-w-none dark:prose-invert prose-a:text-accent prose-headings:tracking-tight"
+    >
+      <Content />
+    </div>
+
+    {
+      (prev || next) && (
+        <nav
+          aria-label="Series navigation"
+          class="mt-14 flex flex-col gap-4 border-t border-line pt-8 sm:flex-row sm:justify-between"
+        >
+          {prev ? (
+            <a
+              href={`/blog/${prev.id}`}
+              class="text-sm text-ink-2 hover:text-accent transition-colors"
+            >
+              ← {prev.data.title}
+            </a>
+          ) : (
+            <span />
+          )}
+          {next && (
+            <a
+              href={`/blog/${next.id}`}
+              class="text-sm text-ink-2 hover:text-accent transition-colors sm:text-right"
+            >
+              {next.data.title} →
+            </a>
+          )}
+        </nav>
+      )
+    }
+  </article>
+</BaseLayout>

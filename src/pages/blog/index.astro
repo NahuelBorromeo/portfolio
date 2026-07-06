@@ -1,0 +1,51 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+import { getPublishedPosts, groupBySeries } from "../../lib/blog";
+
+const posts = await getPublishedPosts();
+const seriesGroups = groupBySeries(posts);
+const standalone = posts.filter((post) => !post.data.series);
+---
+
+<BaseLayout
+  title="Blog — Nahuel Borromeo"
+  description="Notes on iOS engineering: Swift, SwiftUI, UIKit and the fundamentals — written while studying them in public."
+>
+  <div class="mx-auto max-w-3xl px-6 py-16">
+    <h1 class="text-4xl font-semibold tracking-tight">Blog</h1>
+    <p class="mt-4 text-lg text-ink-2">
+      Notes on iOS engineering, written while learning in public.
+    </p>
+
+    {
+      [...seriesGroups.entries()].map(([series, seriesPosts]) => (
+        <section class="mt-12">
+          <h2 class="text-sm font-semibold uppercase tracking-wide text-ink-2">
+            Series · {series}
+          </h2>
+          <div class="mt-4 space-y-4">
+            {seriesPosts.map((post) => (
+              <PostCard post={post} />
+            ))}
+          </div>
+        </section>
+      ))
+    }
+
+    {
+      standalone.length > 0 && (
+        <section class="mt-12">
+          <h2 class="text-sm font-semibold uppercase tracking-wide text-ink-2">
+            Other posts
+          </h2>
+          <div class="mt-4 space-y-4">
+            {standalone.map((post) => (
+              <PostCard post={post} />
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </div>
+</BaseLayout>
