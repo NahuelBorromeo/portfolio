@@ -90,8 +90,8 @@ Do not list spoken-language levels on the site.
 > career on high-stakes products — apps where a bug costs real money — and that
 > shaped how I work: architecture first, tests always, and care for the details
 > users never see. That discipline travels to any product, in any industry.
-> Right now I'm deepening my iOS fundamentals in public through my
-> [Become a better iOS engineer](/blog) series.
+> I write about iOS engineering — from first principles to production patterns
+> — in my [Become a better iOS engineer](/blog) series.
 
 ## Education & certifications
 
@@ -103,7 +103,12 @@ Do not list spoken-language levels on the site.
 
 ## Blog
 
-First series: **"Become a better iOS engineer"** — public notes from Nahuel's
-personal study roadmap. First post should introduce the series: what the roadmap
-is, why he's studying in public, what readers can expect. Posts are short,
-practical, in English.
+First series: **"Become a better iOS engineer"** — Nahuel writing through his
+iOS roadmap from first principles. Posts are short, practical, in English.
+
+**Voice rule (2026-07-06):** the series frame is *teaching from experience*,
+never *learning in public*. Banned phrasings: "learning in public", "studying",
+"deepening my fundamentals", "English practice". Preferred: "first principles",
+"writing is the test of mastery", "explanations I wish I'd found". Rationale:
+next to "4+ years", learner-vocabulary reads junior to US recruiters; covering
+basic topics is fine — the posture must be mastery, not catch-up.

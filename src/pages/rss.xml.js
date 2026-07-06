@@ -6,7 +6,7 @@ export async function GET(context) {
   return rss({
     title: "Nahuel Borromeo — Blog",
     description:
-      "Notes on iOS engineering: Swift, SwiftUI, UIKit and the fundamentals — written while studying them in public.",
+      "Notes on iOS engineering: Swift, SwiftUI, UIKit — from first principles to production patterns.",
     site: context.site,
     items: posts.map((post) => ({
       title: post.data.title,

@@ -90,6 +90,16 @@ growth" in investment-product openings (directionally confirmed by him), and
 numbers, despite being offered the option — fabricated stats collapse under
 US-style interview probing.
 
+## 17c. Blog voice (2026-07-06): teaching frame, not "learning in public"
+Nahuel flagged that "why I'm learning in public" could make him look like a
+beginner since the series covers basic-to-advanced topics. Reframed everywhere:
+post title is now "back to first principles", About says "I write about iOS
+engineering", blog tagline is "from first principles to production patterns".
+Voice rule recorded in docs/knowledge/content.md — series posture is mastery
+(explaining), never catch-up (learning). Rejected: keeping the learn-in-public
+framing (authentic dev-culture vibe, but wrong signal for US recruiters, the
+primary audience).
+
 ## 17. Theme behavior
 Follow `prefers-color-scheme` by default; manual toggle overrides and persists
 in `localStorage`; inline head script prevents flash of wrong theme.
