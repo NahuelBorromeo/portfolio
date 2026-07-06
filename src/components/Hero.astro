@@ -1,5 +1,6 @@
 ---
-import portrait from "../assets/portrait-placeholder.svg";
+import { Image } from "astro:assets";
+import portrait from "../assets/portrait.jpg";
 
 const ctas = [
   { href: "mailto:nahuelborromeo@gmail.com", label: "Email me", primary: true },
@@ -42,11 +43,13 @@ const ctas = [
         }
       </div>
     </div>
-    <img
-      src={portrait.src}
+    <Image
+      src={portrait}
       alt="Portrait of Nahuel Borromeo"
-      width="176"
-      height="176"
+      width={352}
+      height={352}
+      densities={[1, 2]}
+      loading="eager"
       class="size-36 rounded-full object-cover ring-1 ring-line sm:size-44"
     />
   </div>
