@@ -1,0 +1,55 @@
+---
+import ExperienceCard from "./ExperienceCard.astro";
+
+// Copy source: docs/knowledge/content.md — don't invent facts.
+const jobs = [
+  {
+    company: "NTT Data",
+    role: "iOS Engineer",
+    period: "Aug 2024 — Present · Remote",
+    context: "Investments module of a large-scale banking application",
+    bullets: [
+      "Developed and shipped investment features across <strong>Phase 1 and Phase 2</strong> of the module — both live in production.",
+      "Work daily with Swift, UIKit and SwiftUI under Clean Architecture and MVVM, keeping strict Domain / Data / Presentation separation for maintainability and testability.",
+      "Collaborate closely with backend and QA teams in an agile environment.",
+    ],
+  },
+  {
+    company: "Bachatours (USA)",
+    role: "Freelance Developer",
+    period: "Nov 2023 — Feb 2024 · Remote",
+    context: "Commercial website for a US tourism startup",
+    bullets: [
+      "Built the company's commercial website, improving brand visibility and online presence.",
+      "Worked directly with stakeholders to translate business requirements into technical solutions.",
+    ],
+  },
+  {
+    company: "Baufest",
+    role: "Software Developer (iOS)",
+    period: "Mar 2022 — Aug 2023 · Remote",
+    context: "MODO — the digital wallet for BBVA Argentina",
+    bullets: [
+      "Implemented and launched <strong>TransferPull</strong>, a money-transfer feature used by a large user base.",
+      "Built two amortization systems for business lending products.",
+      "Maintained and extended legacy systems under high-pressure delivery cycles, ensuring stability and backward compatibility.",
+    ],
+  },
+  {
+    company: "Yobel SCM",
+    role: "Software Developer",
+    period: "Aug 2021 — Mar 2022 · Remote",
+    bullets: [
+      "Maintained and enhanced enterprise-level systems.",
+      "Implemented new UI components and standardized UI designs across modules.",
+    ],
+  },
+];
+---
+
+<section id="experience" class="mx-auto max-w-5xl scroll-mt-20 px-6 py-16">
+  <h2 class="text-3xl font-semibold tracking-tight">Experience</h2>
+  <div class="mt-8 space-y-5">
+    {jobs.map((job) => <ExperienceCard {...job} />)}
+  </div>
+</section>

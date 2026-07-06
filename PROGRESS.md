@@ -5,12 +5,15 @@ read this file first, pick up at the first unchecked step.
 
 ## Session 1 — Foundation
 
-- [ ] 1. Scaffold: Astro 5 + TypeScript strict + Tailwind v4, git init, GitHub
-      repo, .gitignore, README stub
-- [ ] 2. Design system: theme tokens (light/dark custom properties), BaseLayout
+- [x] 1. Scaffold: Astro 5 + TypeScript strict + Tailwind v4, git init, GitHub
+      repo, .gitignore, README stub — *local git only; GitHub remote pending
+      (needs Nahuel's account, do together with step 11)*
+- [x] 2. Design system: theme tokens (light/dark custom properties), BaseLayout
       with no-flash theme script, Nav (sticky + ThemeToggle), Footer
-- [ ] 3. Hero: photo (placeholder until Nahuel provides the LinkedIn photo),
-      name, title, one-liner, CTAs (Email, LinkedIn, GitHub, Download CV)
+- [x] 3. Hero: photo (placeholder until Nahuel provides the LinkedIn photo),
+      name, title, one-liner, CTAs (Email, LinkedIn, GitHub, Download CV) —
+      *interim: outdated CV PDF copied to public/cv.pdf so the link works;
+      replace with updated PDF*
 
 ## Session 2 — Home content
 

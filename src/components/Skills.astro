@@ -1,0 +1,37 @@
+---
+// Copy source: docs/knowledge/content.md
+const groups = [
+  { title: "iOS", items: ["Swift", "SwiftUI", "UIKit"] },
+  {
+    title: "Architecture",
+    items: ["Clean Architecture", "MVVM", "MVC", "Modularization"],
+  },
+  {
+    title: "Tools",
+    items: ["Swift Package Manager", "Git", "GitHub", "Xcode"],
+  },
+  { title: "Web", items: ["JavaScript", "React", "HTML", "CSS"] },
+];
+---
+
+<section id="skills" class="mx-auto max-w-5xl scroll-mt-20 px-6 py-16">
+  <h2 class="text-3xl font-semibold tracking-tight">Skills</h2>
+  <div class="mt-8 grid gap-5 sm:grid-cols-2">
+    {
+      groups.map((group) => (
+        <div class="rounded-2xl border border-line p-6">
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-ink-2">
+            {group.title}
+          </h3>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            {group.items.map((item) => (
+              <li class="rounded-full bg-surface px-3.5 py-1.5 text-sm">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</section>
