@@ -6,9 +6,13 @@ import Footer from "../components/Footer.astro";
 interface Props {
   title: string;
   description: string;
+  /** og:type — "article" for blog posts */
+  type?: "website" | "article";
 }
 
-const { title, description } = Astro.props;
+const { title, description, type = "website" } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL("/og-default.png", Astro.site);
 ---
 
 <!doctype html>
@@ -18,7 +22,24 @@ const { title, description } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Nahuel Borromeo — Blog"
+      href={new URL("/rss.xml", Astro.site)}
+    />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Nahuel Borromeo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     <script is:inline>
       // Runs before first paint to avoid a flash of the wrong theme.
       const theme =

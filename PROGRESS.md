@@ -17,16 +17,18 @@ read this file first, pick up at the first unchecked step.
 
 ## Session 2 — Home content
 
-- [ ] 4. Experience section: case-study cards (NTT Data, Baufest/MODO, Yobel,
+- [x] 4. Experience section: case-study cards (NTT Data, Baufest/MODO, Yobel,
       Bachatours) from docs/knowledge/content.md
-- [ ] 5. Skills grid + About section
+- [x] 5. Skills grid + About section
 
 ## Session 3 — Blog
 
-- [ ] 6. Blog content collection + schema; /blog index grouped by series;
+- [x] 6. Blog content collection + schema; /blog index grouped by series;
       first post (kickoff of "Become a better iOS engineer")
-- [ ] 7. Post page /blog/[slug]: prose styling, series banner, prev/next
-- [ ] 8. Latest posts strip on home (hides when empty)
+- [x] 7. Post page /blog/[slug]: prose styling, series banner, prev/next —
+      *added @tailwindcss/typography; dates formatted in UTC to avoid
+      off-by-one in UTC-5*
+- [x] 8. Latest posts strip on home (hides when empty)
 
 ## Session 4 — Ship
 

@@ -1,0 +1,34 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Page not found — Nahuel Borromeo"
+  description="This page doesn't exist."
+>
+  <section
+    class="mx-auto flex max-w-5xl flex-col items-start px-6 py-32"
+  >
+    <p class="text-accent font-medium">404</p>
+    <h1 class="mt-2 text-4xl font-semibold tracking-tight">
+      This page doesn't exist.
+    </h1>
+    <p class="mt-4 text-lg text-ink-2">
+      Maybe it moved, maybe it never shipped. Either way, nothing to see here.
+    </p>
+    <div class="mt-8 flex gap-3">
+      <a
+        href="/"
+        class="rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white transition-opacity hover:opacity-85"
+      >
+        Back home
+      </a>
+      <a
+        href="/blog"
+        class="rounded-full border border-line px-5 py-2.5 text-sm font-medium transition-colors hover:bg-surface"
+      >
+        Read the blog
+      </a>
+    </div>
+  </section>
+</BaseLayout>
