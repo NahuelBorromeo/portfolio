@@ -12,6 +12,9 @@ node_modules/
 # macOS
 .DS_Store
 
+# personal career strategy — never commit (public repo)
+career/
+
 # editor
 .vscode/
 .idea/
