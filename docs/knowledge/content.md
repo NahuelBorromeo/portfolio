@@ -1,7 +1,8 @@
 # Site copy source — single source of truth
 
-All copy on the site comes from this file, in English. Where this file and the
-PDF CV disagree, **this file wins** (the CV is slightly outdated).
+All copy on the site comes from this file, in English. In sync with the CV
+(Nahuel_Borromeo_CV_iOS_Engineer_EN, 2026-07) since 2026-07-07. If they ever
+disagree, ask Nahuel which is right, then update both.
 
 ## Identity
 
@@ -36,18 +37,24 @@ CTAs: Email · LinkedIn · GitHub · Download CV
 ### NTT Data — iOS Engineer
 *Aug 2024 – Present · Remote*
 
-Context: investments module of a large-scale banking app (client under NDA —
-refer to it only as "a large-scale banking application").
+Context: investments module of **Interbank's** mobile banking app. Client is
+named publicly since 2026-07-07 (Nahuel put it in his own CV — decision 19 in
+docs/DECISIONS.md).
 
 - Shipped **Phase 1 and Phase 2** of the investments module end to end — both
-  live in production. ← (Phase 2 is the CV update)
-- Helped drive **double-digit percentage growth** in customers opening
-  investment products — a new revenue line for the bank. ← Directional metric
-  confirmed by Nahuel (2026-07); do NOT invent a precise number. Swap in the
-  exact % if he gets a shareable figure.
-- Works with Swift, **UIKit and SwiftUI**, Clean Architecture and MVVM, with
-  strict Domain/Data/Presentation separation for maintainability and testability.
-- Collaborates with backend and QA teams in an agile environment.
+  live in production, driving **double-digit percentage growth** in customers
+  acquiring investment products and opening a new revenue line for the bank.
+  ← Directional metric confirmed by Nahuel; do NOT invent a precise number.
+- Phase 1: built the app's new investments zone from scratch — first in-app
+  gateway to mutual funds, term deposits and high-yield savings accounts.
+- Phase 2: investor-profile flow with personalized recommendations + fully
+  native mutual fund purchase experience (previously web-only).
+- Core code-review group member: gatekeeps code quality for a **50+ iOS
+  developer team**; improvements adopted into the team's code-styling docs.
+- Mentored and onboarded a teammate as her technical reference.
+- Contributed to the UIKit→SwiftUI migration (view layer) and SPM
+  modularization; coordinates daily with UX, Product, Backend, Web, Android
+  and QA.
 
 ### Baufest — Software Developer (iOS)
 *Mar 2022 – Aug 2023 · Remote*
@@ -68,15 +75,18 @@ Context: MODO, the digital wallet for BBVA Argentina (can be named publicly).
 - Maintained and enhanced enterprise-level systems; implemented new UI
   components and standardized UI designs across modules.
 
-### Freelance — Bachatours (USA)
-*Nov 2023 – Feb 2024 · Remote*
+### Freelance — Bachatours (USA) — Web Developer
+*Sep 2023 – Jul 2024 · Remote*
 
-- Built a commercial website for a US tourism startup, working directly with
-  stakeholders to translate business requirements into technical solutions.
+- Built the business website from scratch and owned its ongoing maintenance
+  and evolution.
+- Worked directly with the owner to translate business requirements into
+  technical solutions, improving brand visibility and online presence.
 
 ## Skills (grouped)
 
-- **iOS:** Swift, SwiftUI, UIKit
+- **iOS:** Swift, SwiftUI, UIKit, Swift Concurrency (async/await, Task,
+  TaskGroup, structured concurrency, cooperative cancellation)
 - **Architecture:** Clean Architecture, MVVM, MVC, Modularization
 - **Tools:** Swift Package Manager, Git, GitHub, Xcode
 - **Web:** JavaScript, React, HTML, CSS

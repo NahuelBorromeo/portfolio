@@ -36,14 +36,15 @@ read this file first, pick up at the first unchecked step.
 - [x] 10. Assets & polish: favicon, mobile nav fix, a11y basics (landmarks,
       focus rings, reduced-motion, alt text) — *pending: real photo, updated
       cv.pdf, Lighthouse run against production after deploy*
-- [ ] 11. Deploy: GitHub → Vercel, nahuelborromeo.dev DNS, production smoke
+- [ ] 11. Deploy: GitHub → Vercel, nahuelborromeo.com DNS, production smoke
       test — **blocked on Nahuel:** GitHub repo access, Vercel account, domain
       purchase
 
 ## Notes
 
 - Real photo integrated (src/assets/portrait.jpg) ✓
-- Still waiting on Nahuel: updated CV PDF (public/cv.pdf holds the outdated
-  one), GitHub repo, Vercel account, domain purchase, optional real metrics
-  for experience bullets.
+- Updated CV integrated (public/cv.pdf, 2026-07-07) ✓ — site copy synced:
+  Interbank named, richer NTT bullets, Swift Concurrency skill, Bachatours
+  dates fixed. Domain corrected to nahuelborromeo.com (he bought .com).
+- Still waiting on Nahuel: Vercel account + connecting the domain (step 11).
 - (add blockers, decisions, and things to revisit here)

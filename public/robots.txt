@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nahuelborromeo.dev/sitemap-index.xml
+Sitemap: https://nahuelborromeo.com/sitemap-index.xml

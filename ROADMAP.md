@@ -1,4 +1,4 @@
-# nahuelborromeo.dev — Roadmap
+# nahuelborromeo.com — Roadmap
 
 ## Vision
 
@@ -23,7 +23,7 @@ of production rigor, not as a niche he is locked into.
 | Interactivity | Vanilla JS only (theme toggle). No React/Vue islands in Phase 1 |
 | Fonts | System font stack (SF Pro on Apple devices, zero webfont payload) |
 | Hosting | Vercel (free tier), auto-deploy from GitHub |
-| Domain | nahuelborromeo.dev (~$12/year — the only running cost) |
+| Domain | nahuelborromeo.com (~$12/year — the only running cost) |
 
 ## Design direction
 
@@ -127,7 +127,7 @@ Adding a new top-level section = new page + one nav entry (see
    static OG image, canonical URLs, RSS, sitemap, robots.txt, 404 page.
 10. **Assets & polish** — LinkedIn photo (optimized), `cv.pdf`, favicon set;
     accessibility pass (contrast, focus, landmarks, alt text); Lighthouse ≥95.
-11. **Deploy** — push to GitHub, connect Vercel, configure `nahuelborromeo.dev`,
+11. **Deploy** — push to GitHub, connect Vercel, configure `nahuelborromeo.com`,
     smoke-test production (both themes, mobile, RSS, CV download).
 
 ## Phase 2 — when material exists

@@ -90,6 +90,25 @@ growth" in investment-product openings (directionally confirmed by him), and
 numbers, despite being offered the option — fabricated stats collapse under
 US-style interview probing.
 
+## 19. Interbank named publicly (2026-07-07) — supersedes decision 13
+Nahuel published "Client: Interbank" in his own CV, so the site names it too
+(consistency CV↔site; the downloadable PDF exposes it regardless). His call,
+made explicitly when asked. Experience context is now "Investments module of
+Interbank's mobile banking app".
+
+## 18. Domain is nahuelborromeo.com (2026-07-07) — supersedes decision 2
+Nahuel bought nahuelborromeo.com (not .dev as originally planned). All config
+(astro.config site, robots.txt, OG image, docs) updated. If he ever adds .dev,
+it should 301-redirect to .com in Vercel.
+
+## 17d. CV sync (2026-07-07)
+New CV (Nahuel_Borromeo_CV_iOS_Engineer_EN) replaced the outdated one as
+public/cv.pdf and enriched the site: Interbank context, Phase 1/2 detail,
+code-review gatekeeping for 50+ devs, mentoring, UIKit→SwiftUI migration, SPM
+modularization, Swift Concurrency skill, Bachatours as Web Developer
+(Sep 2023 – Jul 2024). content.md is no longer "corrections over the CV" —
+they are kept in sync.
+
 ## 17c. Blog voice (2026-07-06): teaching frame, not "learning in public"
 Nahuel flagged that "why I'm learning in public" could make him look like a
 beginner since the series covers basic-to-advanced topics. Reframed everywhere:

@@ -23,7 +23,7 @@ Branch pushes get preview URLs.
 
 ```
 /
-├── astro.config.mjs         # site: https://nahuelborromeo.dev, sitemap, rss
+├── astro.config.mjs         # site: https://nahuelborromeo.com, sitemap, rss
 ├── src/
 │   ├── content.config.ts    # blog collection schema (zod)
 │   ├── content/

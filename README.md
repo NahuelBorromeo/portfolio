@@ -1,4 +1,4 @@
-# nahuelborromeo.dev
+# nahuelborromeo.com
 
 Personal portfolio of Nahuel Borromeo, iOS Engineer.
 

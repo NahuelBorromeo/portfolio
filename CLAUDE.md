@@ -1,4 +1,4 @@
-# nahuelborromeo.dev — personal portfolio
+# nahuelborromeo.com — personal portfolio
 
 Personal portfolio of Nahuel Borromeo, iOS Engineer (Lima, Perú). Static site in
 **English**, Apple-like refined design, aimed at international recruiters. Home
@@ -13,13 +13,13 @@ engineer" series. Talk to Nahuel in Spanish; write all site content in English.
 - `docs/DECISIONS.md` — settled decisions with rationale. Don't re-litigate.
 - `docs/ARCHITECTURE.md` — file structure, blog schema, theming, guardrails.
 - `docs/knowledge/content.md` — **single source of truth for all site copy**
-  (the PDF CV is outdated; this file has the corrections).
+  (kept in sync with the CV since 2026-07; if they ever differ, ask Nahuel).
 - `docs/user/` — Nahuel's own guides for running the site and adding content.
 
 ## Stack
 
 Astro 5 (static output, TypeScript strict) + Tailwind CSS v4 + vanilla JS theme
-toggle. Hosted on Vercel, domain nahuelborromeo.dev. No React/Vue islands, no
+toggle. Hosted on Vercel, domain nahuelborromeo.com. No React/Vue islands, no
 CMS, no backend.
 
 ## Design priorities
@@ -35,8 +35,8 @@ CMS, no backend.
 
 - Copy comes from `docs/knowledge/content.md` — never invent facts about
   Nahuel's experience; ask him if something is missing.
-- NTT Data's client is anonymous ("a large-scale banking application").
-  MODO / BBVA Argentina can be named.
+- NTT Data's client is Interbank — named publicly (Nahuel put it in his own
+  CV, 2026-07). MODO / BBVA Argentina can also be named.
 - Components in `src/components/`, one responsibility each; theme via CSS
   custom properties, never hardcoded colors in components.
 - Accessible by default: semantic landmarks, alt text, visible focus,
@@ -123,7 +123,7 @@ Docs are part of the definition of done. A feature without updated docs is not
 complete.
 
 <!-- Implementation prompt:
-You are implementing nahuelborromeo.dev, Nahuel Borromeo's portfolio. Read
+You are implementing nahuelborromeo.com, Nahuel Borromeo's portfolio. Read
 CLAUDE.md first, then PROGRESS.md, then ROADMAP.md Phase 1. Start with the
 first unchecked step in PROGRESS.md.
 -->
